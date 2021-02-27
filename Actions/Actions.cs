@@ -1,7 +1,7 @@
 ﻿using BoDi;
 using OpenQA.Selenium;
 
-namespace spectest.Actions
+namespace spectest
 {
     public class Actions
     {

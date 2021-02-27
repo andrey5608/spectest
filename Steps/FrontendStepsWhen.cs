@@ -7,10 +7,10 @@ namespace spectest.Steps
     [Binding]
     public class FrontendStepsWhen : CommonStepsBase
     {
-        protected Actions.Actions actions;
+        protected Actions actions;
         public FrontendStepsWhen(ScenarioContext injectedContext) : base(injectedContext)
         {
-            actions = new Actions.Actions(injectedContext.ScenarioContainer);
+            actions = new Actions(injectedContext.ScenarioContainer);
         }
 
         [When(@"I open the main page")]
@@ -18,6 +18,5 @@ namespace spectest.Steps
         {
             actions.GoToUrl(MainPage.Link);
         }
-
     }
 }
