@@ -1,15 +1,17 @@
-﻿using BoDi;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
 
-namespace spectest.Steps
+namespace SpecTest.Steps
 {
     public class CommonStepsBase
     {
         protected readonly ScenarioContext context;
+        protected readonly FeatureContext featureContext;
+        protected string currentPageObject;
 
-        public CommonStepsBase(ScenarioContext injectedContext)
+        public CommonStepsBase(ScenarioContext injectedContext, FeatureContext featureContext)
         {
             context = injectedContext;
+            this.featureContext = featureContext;
         }
     }
 }
